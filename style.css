@@ -10,7 +10,7 @@ header {
   color: #fff;
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  position: sticky;
+
   top: 0;
   z-index: 1000;
 }
@@ -82,6 +82,20 @@ p {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.main-card {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 18px;
+  padding: 30px;
+  background: #e8f5e9;
+}
+
+.main-card h3 {
+  font-size: 28px;
+  color: #1b5e20;
+}
+
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -107,14 +121,17 @@ footer {
   border-top: 5px solid #1b5e20;
 }
 
-/* 📱 адаптивность */
+.autor{
+  font-size: 15px;
+}
+
 @media (max-width: 768px) {
   .title { font-size: 2rem; }
   #map { height: 300px; }
 }
 
 @media (max-width: 480px) {
-  header nav { flex-direction: column; gap: 10px; }
+  header nav { flex-direction: column; gap: 10px; text-align: center;}
   .title { font-size: 1.8rem; }
   .card { padding: 10px; }
 }
