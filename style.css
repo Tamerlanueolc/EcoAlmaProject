@@ -82,6 +82,10 @@ p {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.card_under{
+  width:1000;
+}
+
 .main-card {
   grid-column: 1 / -1;
   text-align: center;
@@ -135,3 +139,4 @@ footer {
   .title { font-size: 1.8rem; }
   .card { padding: 10px; }
 }
+
